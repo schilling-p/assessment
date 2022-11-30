@@ -1,12 +1,3 @@
-# given the input, calculate the neighboring cells
-
-# cells are keys in a dictionary (9 entries)
-# for each 1 in the dictionary find the neighbors 
-
-# dont look outside the world
-# a cell can't be its own neighbor
-
-
 input = {1 : 0, 2 : 1, 3 : 0,
          4 : 0, 5 : 1, 6 : 0,
          7 : 0, 8 : 1, 9 : 0}
@@ -21,7 +12,6 @@ lookup = {
 
 values = []
 heatmap = {1 : [], 2 : [], 3 : [], 4 : [], 5 : [], 6 : [], 7 : [], 8 : [], 9 : [],}
-
 while cells:
     lookup_value = cells.pop(0)
     for i in lookup[lookup_value]:
